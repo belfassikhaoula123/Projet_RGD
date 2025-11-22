@@ -1,4 +1,3 @@
-
 numpy==1.24.3
 pandas==2.1.1
 matplotlib==3.8.0
@@ -15,5 +14,4 @@ scikit-learn==1.3.2
 ipython==8.15.0
 jupyter==1.0.0
 
-# Optionnel mais utile
 plotly==5.17.0
