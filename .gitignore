@@ -1,1 +1,4 @@
+Data/kaggle_3m/
+*.tif
+*_mask.tif
 
