@@ -1,7 +1,21 @@
 # Projet_RGD
-
 ## Classification et Segmentation de Tumeurs Cérébrales à partir d’IRM (Deep Learning)
 
+### Abstract
+Ce projet exploite le Deep Learning pour automatiser l’analyse d’images IRM
+cérébrales à travers deux tâches complémentaires : la classification binaire pour détecter la
+présence de tumeurs et la segmentation sémantique pour localiser précisément les régions
+tumorales.
+Les données proviennent du dataset TCGA et comprennent 3929 images de
+résolution 256×256 pixels avec leurs masques associés. Nous avons développé et comparé
+plusieurs architectures : un CNN simple et ResNet-50 pour la classification, ainsi que
+U-Net et ResUNet pour la segmentation. Le meilleur modèle de classification (ResNet-50)
+atteint 95.42% d’accuracy, tandis que le meilleur modèle de segmentation (U-Net) obtient
+un score de Tversky de 90.50%.
+L’approche combinée intègre ces deux modèles dans un pipeline complet offrant à
+la fois la détection et la localisation des tumeurs, constituant ainsi une aide pertinente au
+diagnostic médical.
+### Introduction
 Ce projet implémente un **pipeline Deep Learning complet** pour l’analyse d’images IRM cérébrales, avec :
 
 * **Classification binaire** : tumeur / pas de tumeur (**CNN baseline + ResNet50 Transfer Learning**)
